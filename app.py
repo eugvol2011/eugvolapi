@@ -6,7 +6,7 @@ app = Flask(__name__)
 
 @app.route('/', methods=['GET'])
 def home():
-    data_set = {'Test': '1', 'Timestamp': time.time()}
+    data_set = {'Test': '2', 'Timestamp': time.time()}
     json_dump = json.dumps(data_set)
     return json_dump
 
