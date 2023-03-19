@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 
 @app.route('/', methods=['GET'])
-def ksyusha_timetable():
+def home():
     data_set = {'Test': '1', 'Timestamp': time.time()}
     json_dump = json.dumps(data_set)
     return json_dump
